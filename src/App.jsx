@@ -1,11 +1,12 @@
-import { Search } from "./Components/Search";
-
+import { HeroSection, Navbar, Title } from "./Components/index";
 function App() {
 
   return (
-    <main>
-      <Search />
-    </main>
+    <>
+    <Navbar />
+    <Title />
+    <HeroSection />
+    </>
   );
 }
 
