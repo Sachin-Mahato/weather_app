@@ -1,7 +1,7 @@
 const HeroSection = () => {
   return (
-    <section className="flex flex-col gap-1">
-      <div className="flex items-center justify-between">
+    <section className="flex flex-col gap-1 px-4">
+      <div className="flex items-center  gap-16">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,8 +18,10 @@ const HeroSection = () => {
             />
           </svg>
         </div>
+        <div className="flex gap-6">
         <p className="text-5xl">31&deg;</p>
         <p className="text-[1rem]">27&deg;</p>
+        </div>
       </div>
       <div className="my-4">
         <p>Fair</p>

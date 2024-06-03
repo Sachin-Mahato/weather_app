@@ -1,11 +1,19 @@
-import { HeroSection, Navbar, Title } from "./Components/index";
-function App() {
+import {
+  HeroSection,
+  HourlyForecasts,
+  Navbar,
+  Title,
+  TodayForecasts,
+} from "./Components/index";
 
+function App() {
   return (
     <>
-    <Navbar />
-    <Title />
-    <HeroSection />
+      <Navbar />
+      <Title />
+      <HeroSection />
+      <TodayForecasts />
+      <HourlyForecasts />
     </>
   );
 }
