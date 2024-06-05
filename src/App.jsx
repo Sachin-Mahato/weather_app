@@ -3,7 +3,6 @@ import {
   HourlyForecasts,
   Navbar,
   Title,
-  TodayForecasts,
 } from "./Components/index";
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
       <Navbar />
       <Title />
       <HeroSection />
-      <TodayForecasts />
       <HourlyForecasts />
     </>
   );

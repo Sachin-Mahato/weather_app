@@ -1,7 +1,7 @@
-const key = "15436894849d8fe950095f8174e8d043";
+import conf from "@/conf/conf";
 
 const getGeoLocation = async (location) => {
-  const url = `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=${5}&appid=${key}`;
+  const url = `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=${5}&appid=${conf.key}`;
   try {
     const res = await fetch(url);
     if (res.ok) {

@@ -20,7 +20,7 @@ const Navbar = () => {
           </svg>
         </div>
 
-        <p className="capitalize">weather</p>
+        <p className="capitalize text-gray-100 font-bold ml-4">weather</p>
       </div>
       <Search />
     </nav>

@@ -1,32 +1,24 @@
+import sunIcon from "../assets/wb_sunny_black_24dp.svg";
+import { TodayForecasts } from ".";
 const HeroSection = () => {
   return (
-    <section className="flex flex-col gap-1 px-4">
-      <div className="flex items-center  gap-16">
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="#fed766"
-            className="size-24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-            />
-          </svg>
+    <section className="flex flex-col gap-1 px-4 md:flex-row md:justify-center">
+      <div>
+        <div className="flex items-center  gap-16">
+          <div>
+            <img src={sunIcon} alt="sun icon" className="w-24 h-24 " />
+          </div>
+          <div className="flex gap-6">
+            <p className="text-5xl">31&deg;</p>
+            <p className="text-[1rem]">27&deg;</p>
+          </div>
         </div>
-        <div className="flex gap-6">
-        <p className="text-5xl">31&deg;</p>
-        <p className="text-[1rem]">27&deg;</p>
+        <div className="my-4">
+          <p>Fair</p>
+          <p>2% chance of rain through 9 PM</p>
         </div>
       </div>
-      <div className="my-4">
-        <p>Fair</p>
-        <p>2% chance of rain through 9PM</p>
-      </div>
+      <TodayForecasts />
     </section>
   );
 };
