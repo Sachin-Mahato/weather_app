@@ -7,10 +7,11 @@ export const HourlyForecasts = () => {
     <section className="px-4 mt-4">
       <div>
         <div>
-          <h2 className="font-semibold md:text-center">Hourly Forecasts of Dhanbad</h2>
+          <h2 className="font-semibold md:text-center">
+            Hourly Forecasts of Dhanbad
+          </h2>
         </div>
         <div className="flex justify-between mt-4  md:justify-center md:gap-16">
-
           <div className=" flex flex-col items-center gap-2 justify-center">
             <p>9 AM</p>
             <div>

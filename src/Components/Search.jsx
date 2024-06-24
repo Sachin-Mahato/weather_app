@@ -1,21 +1,25 @@
-import { useState } from "react";
-import { getGeoLocation } from "../utils/weather";
+import { useContext} from "react";
+import { getGeoLocation } from "../service/weather";
 import { Input } from "@/components/ui/input";
+import weatherContext from "@/contexts/WeatherContext";
 
 export const Search = () => {
-  const [location, setLocation] = useState("");
+  const {location,handleOnChange, handleClick} = useContext(weatherContext)
+
 
   return (
     <>
       <div className="flex items-center gap-1">
         <div>
           <Input
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
+            onChange={handleOnChange}
           />
-          
         </div>
-        <button onClick={() => getGeoLocation(location)}>
+        <button
+          onClick={ async() => {
+            await handleClick(getGeoLocation(location))
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -1,4 +1,5 @@
 import { Search } from "./Search";
+
 const Navbar = () => {
   return (
     <nav className="flex justify-between bg-teal-500 py-4 px-4">

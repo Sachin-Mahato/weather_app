@@ -1,4 +1,4 @@
-import conf from "@/conf/conf";
+import conf from "../conf/conf"
 
 const getGeoLocation = async (location) => {
   const url = `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=${5}&appid=${conf.key}`;
@@ -7,7 +7,7 @@ const getGeoLocation = async (location) => {
     if (res.ok) {
       const data = await res.json();
       const { lat, lon } = await data[1];
-      return getCurrentWeather(lat, lon)
+      return getCurrentWeather(lat, lon);
     } else {
       throw new Error("Error in getting geolocation");
     }
@@ -17,13 +17,15 @@ const getGeoLocation = async (location) => {
 };
 
 
+
+
 const getCurrentWeather = async (lat, lon) => {
-  const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${conf.key}`;
   try {
     const res = await fetch(URL);
     if (res.ok) {
       const data = await res.json();
-      console.log(data);
+      return data;
     } else {
       throw new Error("Error in getting current weather");
     }
