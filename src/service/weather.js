@@ -25,6 +25,7 @@ const getCurrentWeather = async (lat, lon) => {
     const res = await fetch(URL);
     if (res.ok) {
       const data = await res.json();
+      console.log(data)
       return data;
     } else {
       throw new Error("Error in getting current weather");
@@ -34,7 +35,20 @@ const getCurrentWeather = async (lat, lon) => {
   }
 };
 
+const weatherFor = async (lat, lon) => {
+  const URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${conf.key}`
+  try {
+    const res = await fetch(URL);
+    if (res.ok) {
+      const data = await res.json();
+      console.log(data)
+      return data;
+    }
+  } catch (error) {
+    console.log("error in weatherFor function", error)
+  }
+}
 
 
-export { getGeoLocation, getCurrentWeather };
 
+export { getGeoLocation, getCurrentWeather, weatherFor };

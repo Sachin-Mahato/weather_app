@@ -1,8 +1,8 @@
-import { Search } from "./Search";
+import SearchBar from "./SearchBar";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between bg-teal-500 py-4 px-4">
+    <nav className="flex justify-between items-center bg-teal-500 py-3 ">
       <div className="flex items-center gap-1">
         <div className="cursor-pointer">
           <svg
@@ -23,7 +23,7 @@ const Navbar = () => {
 
         <p className="capitalize text-gray-100 font-bold ml-4">weather</p>
       </div>
-      <Search />
+      <SearchBar />
     </nav>
   );
 };

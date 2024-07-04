@@ -4,10 +4,10 @@ import halfMoonIcon from "../assets/nightlight_black_24dp.svg";
 
 export const HourlyForecasts = () => {
   return (
-    <section className="px-4 mt-4">
+    <section className="px-4 mt-10 md:mt-16 md:mb-48">
       <div>
         <div>
-          <h2 className="font-semibold md:text-center">
+          <h2 className="font-semibold ">
             Hourly Forecasts of Dhanbad
           </h2>
         </div>

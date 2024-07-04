@@ -1,15 +1,16 @@
-import Navbar from "./Navbar";
-import { Search } from "./Search";
+import Navbar from "./Navbar/Navbar";
 import HeroSection from "./HeroSection";
 import { Title } from "./Title";
 import { TodayForecasts } from "./TodayForecasts";
 import { HourlyForecasts } from "./HourlyForecasts";
+import {WeatherPanel} from "./WeatherPanel/index";
 
 export {
   Navbar,
-  Search,
   HeroSection,
   Title,
   TodayForecasts,
-  HourlyForecasts 
+  HourlyForecasts,
+  WeatherPanel
 }
+
