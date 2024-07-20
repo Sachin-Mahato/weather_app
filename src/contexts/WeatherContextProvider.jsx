@@ -4,11 +4,14 @@ import weatherContext from "./WeatherContext";
 const WeatherContextProvider = ({ children }) => {
   const [location, setLocation] = useState("dhanbad");
   const [data, setData] = useState({});
+  const [daily, setDaily] = useState({})
 
-  const handleClick = async (fn) => {
+  const handleClick = async (fn, fun) => {
     try {
       const result = await fn;
-      setData(result) 
+      const resultOne = await fun;
+      setData(result);
+      setDaily(resultOne);
     } catch (error) {
       console.log("error in handleClick", error);
     }
@@ -20,7 +23,7 @@ const WeatherContextProvider = ({ children }) => {
 
   return (
     <weatherContext.Provider
-      value={{ location, handleOnChange, data, handleClick }}
+      value={{ location, handleOnChange, data, handleClick, daily }}
     >
       {children}
     </weatherContext.Provider>

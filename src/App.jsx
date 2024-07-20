@@ -3,7 +3,7 @@ import {
   HourlyForecasts,
   Navbar,
   Title,
-  WeatherPanel
+  WeatherPanel,
 } from "./Components/index";
 import WeatherContextProvider from "./contexts/WeatherContextProvider";
 
@@ -12,16 +12,13 @@ function App() {
     <WeatherContextProvider>
       <Navbar />
       <div className="md:flex md:flex-col md:items-center">
-
-      <Title />
-      <HeroSection />
-      <WeatherPanel />
-      <HourlyForecasts />
+        <Title />
+        <HeroSection />
+        <WeatherPanel />
+        <HourlyForecasts />
       </div>
     </WeatherContextProvider>
   );
 }
-
-
 
 export default App;

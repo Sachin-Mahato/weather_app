@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import weatherContext from "../../contexts/WeatherContext";
-import { getGeoLocation } from "../../service/weather";
+import { getGeoLocation, getGeoLocationForDay } from "@/service/weather";
 
 const SearchIcon = () => {
   const {location, handleClick} = useContext(weatherContext)
@@ -8,7 +8,7 @@ const SearchIcon = () => {
     <>
       <button
         onClick={async () => {
-          await handleClick(getGeoLocation(location));
+          await handleClick(getGeoLocation(location), getGeoLocationForDay(location));
         }}
       >
         <svg

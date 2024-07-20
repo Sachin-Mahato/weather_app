@@ -10,6 +10,7 @@ const HeroSection = () => {
   const maxTemperature = data && data.main && data.main.temp_max;
   const currTemp = kelvinToCelsius(currentTemperature);
   const maxTemp = kelvinToCelsius(maxTemperature);
+  const predication = data && data.weather && data.weather[0] && data.weather[0]["main"];
   return (
     <section className="flex flex-col gap-8 px-4 md:flex-row md:justify-center md:gap-6 mt-10 md:mt-16">
       <div>
@@ -25,7 +26,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="mt-10">
-          <p>Fair</p>
+          <p>{predication ? predication : 'fair'}</p>
           <p className="text-[14px]">2% chance of rain through 9 PM</p>
         </div>
       </div>
