@@ -1,8 +1,68 @@
-# React + Vite
+# Weather App 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, responsive weather application built using **React**. This app fetches real-time weather data for any location and displays it in an easy-to-understand interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Search Functionality**: Search for the current weather in any city worldwide.  
+- **Real-Time Data**: Displays live weather conditions, temperature, humidity, and more.  
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices.  
+- **Dynamic Icons**: Weather conditions are represented by dynamic icons or illustrations.  
+- **Error Handling**: Alerts users when a city is not found or there's an issue with the weather service.  
+
+---
+
+## Demo
+
+Check out the live demo [here](https://weather-now-web-app.netlify.app/).
+
+---
+
+## Technologies Used
+
+- **Frontend**: React, Tailwind CSS  
+- **API**: OpenWeatherMap  
+- **Package Manager**: Bun
+
+# Weather App 🌤️
+
+A simple, responsive weather application built using **React**. This app fetches real-time weather data for any location and displays it in an easy-to-understand interface.
+
+---
+
+## Features
+
+- **Search Functionality**: Search for the current weather in any city worldwide.  
+- **Real-Time Data**: Displays live weather conditions, temperature, humidity, and more.  
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices.  
+- **Dynamic Icons**: Weather conditions are represented by dynamic icons or illustrations.  
+- **Error Handling**: Alerts users when a city is not found or there's an issue with the weather service.  
+
+---
+
+## Demo
+
+Check out the live demo [here](https://weather-now-web-app.netlify.app/).
+
+---
+
+## Technologies Used
+
+- **Frontend**: React, Tailwind CSS  
+- **API**: OpenWeatherMap  
+- **Package Manager**: Bun  
+
+---
+
+## Contributing
+
+Contributing isn't allowed.
+
+---
+
+## Acknowledgments
+
+- [OpenWeatherMap](https://openweathermap.org/) for the weather API.  
+- React and the amazing open-source community.
